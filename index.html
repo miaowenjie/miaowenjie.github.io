@@ -24,38 +24,13 @@
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compile and install</h3>
 
-<p>.
-	├── build						---  the target dir that libraries and hearder files will be installed in
-	│?? ├── examples					---  
-	│?? │?? ├── example1					---  a simple exampe
-	│?? │?? │?? ├── client.c
-	│?? │?? │?? └── Makefile
-	│?? │?? └── example2					---  another simple example with two pthreads
-	│?? │??     ├── client_thread.c
-	│?? │??     └── Makefile
-	│?? ├── include						---  after make install, the DeviceProfileInterface.h & cJSON.h & Debug.h 
-	│	│						---  will be copied into build/include
-	│?? └── lib						---  after make install, the libdevice.a will be copied into build/lib
-	├── src
-	│	├── cJSON					---  the source files to make JSON data
-	│	│?? ├── cJSON.c
-	│	│?? └── cJSON.h
-	│	├── Debug.h
-	│	├── DeviceProfile.c				---  the source file to use xmpp protocol
-	│	├── DeviceProfileInterface.h			---  the heaader file supplied to developers
-	│	├── Makefile
-	│	└── third_parts					---  third_parts libraries
-	│	    └── iksemel-1.4				---  source code of the xmpp library
-	├── README.build
-	├── README.API
-	└── README.md<\p>
-<p>A. x86 compile</p>
-<p>		step 1:build libraries</p>
-<p>			#cd OmnyIQ-SDK/src</p>
-<p>			#make</p>
-<p>			#make install</p>
-<p>			you will find libdevice.a in build/lib and header files in build/include</p>
-<p> </p>
+<p>&nbsp;A. x86 compile
+<br />&nbsp;&nbsp;&nbsp;&nbsp;step 1:build libraries
+<<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#cd OmnyIQ-SDK/src
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#make
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#make install
+<br />			you will find libdevice.a in build/lib and header files in build/include</p>
+<br />
 <p>		step 2:build example</p>
 <p>			#cd ../build/example2</p>
 <p>			#make</p>
